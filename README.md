@@ -10,21 +10,21 @@ This is not about website content or UI.
 
 Requirements:
 
-● Deliver the tooling to set up an application which displays a web page with text and
+* Deliver the tooling to set up an application which displays a web page with text and
 an image in AWS. (AWS free-tier is fine)
-● Provide and document a mechanism for scaling the service and delivering the
+* Provide and document a mechanism for scaling the service and delivering the
 content to a larger audience.
-● Source code should be provided via a publicly accessible Github repository.
-● Provide basic documentation to run the application along with any other
+* Source code should be provided via a publicly accessible Github repository.
+* Provide basic documentation to run the application along with any other
 documentation you think is appropriate.
-● Be prepared to explain your choices.
+* Be prepared to explain your choices.
 
 
 Extra Mile Bonus (not a requirement)
 
 In addition to the above, time permitting, consider the following suggestions for taking your
 implementation a step further.
-● Monitoring/Alerting
-● Security
-● Automation
-● Network diagrams
+* Monitoring/Alerting
+* Security
+* Automation
+* Network diagrams

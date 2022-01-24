@@ -1,6 +1,7 @@
 # checkmeoutdemo
 
 Background:
+
 You have been asked to create a website for a modern company that has recently migrated
 their entire infrastructure to AWS. They want you to demonstrate a basic website with some
 text and an image, hosted and managed using modern standards and practices in AWS.

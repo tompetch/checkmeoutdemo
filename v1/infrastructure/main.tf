@@ -49,16 +49,11 @@ EOF
   }
 }
 
-resource "local_file" "index_html" {
-  content  = local.index_html
-  filename = "./v1/application/index.html"
-}
-
-resource "aws_s3_bucket_object" "index_html_upload" {
+resource "aws_s3_bucket_object" "index_html" {
 
   bucket = "checkmeoutdemo.tompetch.com"
   key    = "index.html"
   acl    = "public-read"
-  source = local_file.index_html.filename
-  etag   = md5(local_file.index_html.content)
+  source = "./v1/application/index.html"
+
 }

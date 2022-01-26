@@ -29,4 +29,4 @@ override.tf.json
 # example: *tfplan*
 
 # Ignore lock files
-terraform.lock.hcl
+*.terraform.lock.hcl

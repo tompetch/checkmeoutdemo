@@ -49,11 +49,16 @@ EOF
   }
 }
 
-resource "aws_s3_bucket_object" "index_html" {
+resource "local_file" "index_html" {
+  content  = local.index_html
+  filename = "./v1/application/index.html"
+}
+
+resource "aws_s3_bucket_object" "index_html_upload" {
 
   bucket = aws_s3_bucket.website_bucket.id
   key    = "index.html"
   acl    = "public-read"
-  source = "./v1/application/"
+  source = local_file.index_html.filename
 
 }

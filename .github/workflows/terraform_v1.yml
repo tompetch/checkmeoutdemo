@@ -1,3 +1,11 @@
+name: "checkmeoutdemo_v1_pipeline"
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    env:
+      working-directory: v1\infrastructure
+    steps:  
     - name: Verify Terraform version
       run: terraform --version
 

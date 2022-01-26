@@ -49,7 +49,7 @@ EOF
   }
 }
 
-resource "local_file" "index_html" {
+data "local_file" "index_html" {
   content  = local.index_html
   filename = "./v1/application/index.html"
 }

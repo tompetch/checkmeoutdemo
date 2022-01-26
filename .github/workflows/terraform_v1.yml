@@ -8,7 +8,7 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
     env:
-      working-directory: v1\infrastructure
+      workingDirectory: v1\infrastructure
     steps:  
     - name: Verify Terraform version
       run: terraform --version

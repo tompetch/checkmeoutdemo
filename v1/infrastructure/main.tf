@@ -10,10 +10,13 @@ terraform {
   }
 }
 
+provider "aws" {
+  region = "eu-west-1"
+}
+
 resource "aws_s3_bucket" "website_bucket" {
   bucket = "checkmeoutdemo.tompetch.com"
   acl    = "public-read"
-  region = "eu-west-1"
 
   website {
     index_document = "index.html"

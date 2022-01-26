@@ -7,8 +7,12 @@ name: "checkmeoutdemo_v1_pipeline"
 jobs:
   terraform:
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./v1/infrastructure
+    # Set the working directory to main for the config files
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./v1/infrastructure
+
     steps:  
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout

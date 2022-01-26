@@ -13,7 +13,6 @@ terraform {
 resource "aws_s3_bucket" "website_bucket" {
   bucket = "checkmeoutdemo.tompetch.com"
   acl    = "public-read"
-  policy = file("policy.json")
 
   website {
     index_document = "index.html"

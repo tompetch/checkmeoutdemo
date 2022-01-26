@@ -48,3 +48,13 @@ resource "aws_s3_bucket" "website_bucket" {
 EOF
   }
 }
+
+resource "aws_s3_bucket_object" "index.html" {
+
+  bucket = aws_s3_bucket.index.html.id
+  key    = "index.html"
+  acl    = "private"  # or can be "public-read"
+  source = "v1/application/index.html"
+  etag = filemd5("v1/application/index.html")
+
+}

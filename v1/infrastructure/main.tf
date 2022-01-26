@@ -54,7 +54,7 @@ resource "aws_s3_bucket_object" "index_html" {
   bucket = "checkmeoutdemo.tompetch.com"
   key    = "index.html"
   acl    = "public-read"
-  source = "./v1/application/"
-  etag = filemd5("./v1/application/")
+  source = "./v1/application/index.html"
+  etag = filemd5("./v1/application/index.html")
 
 }

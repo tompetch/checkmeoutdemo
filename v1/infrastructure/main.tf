@@ -51,7 +51,7 @@ EOF
 
 resource "aws_s3_bucket_object" "index_html" {
 
-  bucket = "checkmeoutdemo.tompetch.com"
+  bucket = aws_s3_bucket.website_bucket.id
   key    = "index.html"
   acl    = "public-read"
   source = "./v1/application/index.html"

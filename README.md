@@ -38,14 +38,12 @@ We are going to keep this POC very simple and stick with 3 main services. S3 for
 
 This is a simple cost effectove solution that meets all the functional requirements.
 
-**DevOps**
+**DevOps:**
 
 In this instance we will use github actions for our ci/cd pipelines, with terraform orhestrating our infrastructure. Some manual interention is required with Route53 for purchasing the domain and configuring dns.
 
 ![This is an image](/v1/docs/cicd.PNG)
 
-**Github actions pipelines**
+**Github actions pipelines:**
 
-In the github/workflows folder there are two pipeline configurations, one for deploying the terraform, the othe rfor uploading the website content to s3.
-
-
+In the github/workflows folder there are two pipeline configurations, one for deploying the terraform, the othe for uploading the website content to s3. The primary pipeline is trigged by a push to main and the second is on completion of primary.

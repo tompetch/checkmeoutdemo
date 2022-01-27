@@ -109,7 +109,7 @@ resource "aws_cloudfront_distribution" "website_distribution" {
 
     logging_config {
     include_cookies = false
-    bucket          = var.bucketname
+    bucket          = var.fullbucketname
   }
 
   aliases = ["${var.domain_name}"]

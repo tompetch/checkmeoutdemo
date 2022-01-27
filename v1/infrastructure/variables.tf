@@ -1,6 +1,9 @@
 variable "bucketname" {
     default = "s3bucket.checkmeoutdemo.com"
 }
+variable "fullbucketname" {
+    default = "s3bucket.checkmeoutdemo.com.s3-us-west-1.amazonaws.com."
+}
 variable "domain_name" {
   default = "www.checkmeout-demo.com"
 }

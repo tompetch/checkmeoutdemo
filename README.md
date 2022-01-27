@@ -36,4 +36,5 @@ We are going to keep this POC very simple and stick with 3 main services. S3 for
 
 [[v1\docs\infra_v1.PNG]]
 
+![This is an image](v1\docs\infra_v1.PNG)
 

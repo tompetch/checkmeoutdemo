@@ -20,7 +20,7 @@ resource "aws_kms_key" "mykey" {
 }
 
 resource "aws_s3_bucket" "website_bucket" {
-  bucket = "checkmeoutdemo.tompetch.com"
+  bucket = var.bucketname
   acl    = "public-read"
     
   server_side_encryption_configuration {
@@ -31,25 +31,6 @@ resource "aws_s3_bucket" "website_bucket" {
       }
     }
   }
-policy = <<EOF
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "PublicReadGetObject",
-            "Effect": "Allow",
-            "Principal": "*",
-            "Action": [
-                "s3:GetObject"
-            ],
-            "Resource": [
-                "arn:aws:s3:::checkmeoutdemo.tompetch.com"
-            ]
-        }
-    ]
-}
-EOF
-  
 
   website {
     index_document = "index.html"
@@ -65,6 +46,21 @@ EOF
     }
 }]
 EOF
+  }
+}
+
+data "aws_iam_policy_document" "website_policy" {
+  statement {
+    actions = [
+      "s3:GetObject"
+    ]
+    principals {
+      identifiers = ["*"]
+      type = "AWS"
+    }
+    resources = [
+      "arn:aws:s3:::${var.bucketname}/*"
+    ]
   }
 }
 

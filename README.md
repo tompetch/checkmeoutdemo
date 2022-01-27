@@ -30,6 +30,11 @@ implementation a step further.
 * Automation
 * Network diagrams
 
-Basic Design:
+Basic Design (v1):
+
+We are going to keep this POC very simple and stick with 3 main services. S3 for storage, Cloudfront for content distribution and Route53 for hosting/dns. 
+
+![alt text](v1\docs\infra_v1.PNG)
+
 
 

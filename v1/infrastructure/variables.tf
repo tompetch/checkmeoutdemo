@@ -1,3 +1,3 @@
-variable {
-    bucketname = "checkmeoutdemo.tompetch.com"
+variable "bucketname" {
+    default = "checkmeoutdemo.tompetch.com"
 }

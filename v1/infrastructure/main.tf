@@ -32,6 +32,25 @@ resource "aws_s3_bucket" "website_bucket" {
     }
   }
 
+    policy = <<EOF
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::${var.bucketname}/*"
+            ]
+        }
+    ]
+}
+EOF
+
   website {
     index_document = "index.html"
     error_document = "error.html"
@@ -48,22 +67,6 @@ resource "aws_s3_bucket" "website_bucket" {
 EOF
   }
 }
-
-data "aws_iam_policy_document" "website_policy" {
-  statement {
-    actions = [
-      "s3:GetObject"
-    ]
-    principals {
-      identifiers = ["*"]
-      type = "AWS"
-    }
-    resources = [
-      "arn:aws:s3:::${var.bucketname}/*"
-    ]
-  }
-}
-
 resource "aws_s3_bucket_object" "index_html_upload" {
 
   bucket = aws_s3_bucket.website_bucket.id

@@ -25,6 +25,9 @@ resource "aws_s3_bucket" "website_bucket" {
       }
     }
   }
+  versioning {
+    enabled = true
+  }
 
     policy = <<EOF
 {

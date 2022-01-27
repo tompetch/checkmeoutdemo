@@ -11,7 +11,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-west-1"
+  region = "us-east-1"
 }
 
 resource "aws_s3_bucket" "website_bucket" {
@@ -130,7 +130,7 @@ resource "aws_cloudfront_distribution" "website_distribution" {
 
   // Here's where our certificate is loaded in!
   viewer_certificate {
-    acm_certificate_arn = var.cert_arn
+    acm_certificate_arn = var.certificate.id
     ssl_support_method  = "sni-only"
   }
 }

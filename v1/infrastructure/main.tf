@@ -79,7 +79,7 @@ resource "aws_s3_bucket_object" "error_html_upload" {
   bucket = aws_s3_bucket.website_bucket.id
   key    = "error.html"
   acl    = "public-read"
-  source = "./v1/application/"
+  source = "v1/application/"
   server_side_encryption  = "AES256"
 
 }

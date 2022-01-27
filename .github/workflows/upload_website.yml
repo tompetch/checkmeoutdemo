@@ -2,7 +2,7 @@ name: Upload Website
 
 on:
   workflow_run:
-    workflows: [terraform_v1]
+    workflows: [checkmeoutdemo_v1_pipeline]
     types:
       - completed
 

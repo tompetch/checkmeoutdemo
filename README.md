@@ -1,6 +1,6 @@
 # checkmeoutdemo
 
-Background:
+**Background:**
 
 We have been asked to create a website for a modern company that has recently migrated
 their entire infrastructure to AWS. We need to demonstrate a basic website with some
@@ -9,7 +9,7 @@ We can create your own application, or use open source or community software. Th
 of concept is to demonstrate hosting, managing, and scaling an enterprise-ready system.
 This is not about website content or UI.
 
-Requirements:
+**Requirements:**
 
 * Deliver the tooling to set up an application which displays a web page with text and
 an image in AWS. (AWS free-tier is fine)
@@ -21,7 +21,7 @@ documentation you think is appropriate.
 * Be prepared to explain your choices.
 
 
-Extra Mile Bonus (not a requirement)
+**Extra Mile Bonus (not a requirement)**
 
 In addition to the above, time permitting, consider the following suggestions for taking your
 implementation a step further.
@@ -30,7 +30,7 @@ implementation a step further.
 * Automation
 * Network diagrams
 
-Basic Design (v1):
+**Basic Design (v1):**
 
 We are going to keep this POC very simple and stick with 3 main services. S3 for storage, Cloudfront for content distribution and Route53 for hosting/dns. 
 

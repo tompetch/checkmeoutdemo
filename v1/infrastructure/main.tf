@@ -70,3 +70,13 @@ resource "aws_s3_bucket_object" "index_html_upload" {
   server_side_encryption  = "AES256"
 
 }
+
+resource "aws_s3_bucket_object" "error_html_upload" {
+
+  bucket = aws_s3_bucket.website_bucket.id
+  key    = "error.html"
+  acl    = "public-read"
+  content = "./v1/application/error.html"
+  server_side_encryption  = "AES256"
+
+}

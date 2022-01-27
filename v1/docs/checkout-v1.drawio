@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-27T22:22:44.081Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="91zkfCPYEfZ0gn2shf1i" version="16.4.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-01-27T22:25:10.609Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="8wI3eRQ_JYnf4QNFtuUa" version="16.4.7" type="github" pages="3">
   <diagram id="mFJ4cPxP4Nz1lQu3-xth" name="v1">
     <mxGraphModel dx="1318" dy="1113" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -46,7 +46,7 @@
         <mxCell id="RcW36cILYPGp9oJjtcSt-0" />
         <mxCell id="RcW36cILYPGp9oJjtcSt-1" parent="RcW36cILYPGp9oJjtcSt-0" />
         <mxCell id="RcW36cILYPGp9oJjtcSt-2" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="RcW36cILYPGp9oJjtcSt-1">
-          <mxGeometry x="545" y="47.75" width="535" height="422.25" as="geometry" />
+          <mxGeometry x="545" y="47.75" width="405" height="422.25" as="geometry" />
         </mxCell>
         <mxCell id="RcW36cILYPGp9oJjtcSt-3" value="Cloudfront" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.cloudfront;fillColor=#F58536;gradientColor=none;" vertex="1" parent="RcW36cILYPGp9oJjtcSt-1">
           <mxGeometry x="680" y="100" width="76.5" height="93" as="geometry" />
@@ -77,6 +77,12 @@
             <mxPoint x="120" y="256.5" as="sourcePoint" />
             <mxPoint x="300" y="256.5" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="EcaVulnbB6559CpDU-G3-0" value="API Gateway" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.api_gateway;fillColor=#D9A741;gradientColor=none;" vertex="1" parent="RcW36cILYPGp9oJjtcSt-1">
+          <mxGeometry x="790" y="150" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="EcaVulnbB6559CpDU-G3-1" value="Labmda" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda;fillColor=#F58534;gradientColor=none;" vertex="1" parent="RcW36cILYPGp9oJjtcSt-1">
+          <mxGeometry x="790" y="281.38" width="76.5" height="93" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

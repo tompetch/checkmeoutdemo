@@ -1,5 +1,5 @@
 variable "bucketname" {
-    default = "bucket.checkmeoutdemo.com"
+    default = "s3bucket.checkmeoutdemo.com"
 }
 variable "domain_name" {
   default = "www.checkmeout-demo.com"

@@ -2,10 +2,10 @@
 
 Background:
 
-You have been asked to create a website for a modern company that has recently migrated
-their entire infrastructure to AWS. They want you to demonstrate a basic website with some
+We have been asked to create a website for a modern company that has recently migrated
+their entire infrastructure to AWS. We need to demonstrate a basic website with some
 text and an image, hosted and managed using modern standards and practices in AWS.
-You can create your own application, or use open source or community software. The proof
+We can create your own application, or use open source or community software. The proof
 of concept is to demonstrate hosting, managing, and scaling an enterprise-ready system.
 This is not about website content or UI.
 
@@ -29,3 +29,7 @@ implementation a step further.
 * Security
 * Automation
 * Network diagrams
+
+Basic Design:
+
+

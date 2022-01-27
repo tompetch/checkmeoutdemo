@@ -74,3 +74,4 @@ resource "aws_acm_certificate" "certificate" {
   // redirecting to the www. domain immediately.
   subject_alternative_names = ["${var.domain_name}"]
 }
+

@@ -1,5 +1,5 @@
 variable "bucketname" {
-    default = "checkmeoutdemo.tompetch.com"
+    default = "bucket.checkmeoutdemo.com"
 }
 variable "domain_name" {
   default = "www.checkmeout-demo.com"

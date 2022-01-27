@@ -14,11 +14,6 @@ provider "aws" {
   region = "eu-west-1"
 }
 
-resource "aws_kms_key" "mykey" {
-  description             = "This key is used to encrypt bucket objects"
-  deletion_window_in_days = 10
-}
-
 resource "aws_s3_bucket" "website_bucket" {
   bucket = var.bucketname
   acl    = "public-read"
@@ -72,6 +67,6 @@ resource "aws_s3_bucket_object" "index_html_upload" {
   key    = "index.html"
   acl    = "public-read"
   content = "./v1/application/index.html"
-  server_side_encryption  = "aws:kms"
+  server_side_encryption  = "AES256"
 
 }

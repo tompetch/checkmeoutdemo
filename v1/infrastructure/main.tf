@@ -11,7 +11,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "eu-west-1"
+  region = "us-west-1"
 }
 
 resource "aws_s3_bucket" "website_bucket" {
@@ -69,7 +69,6 @@ resource "aws_acm_certificate" "certificate" {
   // We want a wildcard cert so we can host subdomains later.
   domain_name       = "*.${var.domain_name}"
   validation_method = "EMAIL"
-  provider = aws.virginia
 
   // We also want the cert to be valid for the root domain even though we'll be
   // redirecting to the www. domain immediately.

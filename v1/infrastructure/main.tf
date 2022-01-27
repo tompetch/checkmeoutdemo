@@ -107,6 +107,11 @@ resource "aws_cloudfront_distribution" "website_distribution" {
     }
   }
 
+    logging_config {
+    include_cookies = false
+    bucket          = var.bucketname
+  }
+
   aliases = ["${var.domain_name}"]
 
   restrictions {

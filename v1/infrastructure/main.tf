@@ -130,7 +130,7 @@ resource "aws_cloudfront_distribution" "website_distribution" {
 
   // Here's where our certificate is loaded in!
   viewer_certificate {
-    acm_certificate_arn = var.certificate.id
+    acm_certificate_arn =  "${aws_acm_certificate.certificate.id}"
     ssl_support_method  = "sni-only"
   }
 }

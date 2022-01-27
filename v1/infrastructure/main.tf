@@ -73,6 +73,6 @@ resource "aws_s3_bucket_object" "index_html_upload" {
   key    = "index.html"
   acl    = "public-read"
   content = "./v1/application/index.html"
-  sse_algorithm  = "aws:kms"
+  server_side_encryption  = "aws:kms"
 
 }

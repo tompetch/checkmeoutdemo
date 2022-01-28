@@ -1,5 +1,9 @@
 # checkmeoutdemo
 
+https://checkmeout-demo.com/
+https://d2hpoykar2zmx4.cloudfront.net/
+
+
 **Background:**
 
 We have been asked to create a website for a modern company that has recently migrated
@@ -32,7 +36,7 @@ implementation a step further.
 
 **Basic Design (v1):**
 
-We are going to keep this POC very simple and stick with 3 main services. S3 for storage, Cloudfront for content distribution and Route53 for hosting/dns. 
+We are going to keep this POC very simple and stick with 3 main services. S3 for storage, Cloudfront for content distribution and Route53 for hosting/dns. We will also use Certificate Manager for the ssl cert required for the web frontend.
 
 ![This is an image](/v1/docs/infra_v1.PNG)
 
@@ -46,4 +50,11 @@ In this instance we will use github actions for our ci/cd pipelines, with terraf
 
 **Github actions pipelines:**
 
-In the github/workflows folder there are two pipeline configurations, one for deploying the terraform, the othe for uploading the website content to s3. The primary pipeline is trigged by a push to main and the second is on completion of primary.
+In the github/workflows folder there are two pipeline configurations, one for deploying the terraform, the other for uploading the website content to s3. The primary pipeline is trigged by a push to main and the second is on completion of primary.
+
+**Security**
+
+We are using an ssl certificate on the web front end and have also enabled encryption on the s3 buckets. Public access is technically allowed but we want to further restrict access to content by using an origin access identity and an updated bucket policy.
+
+
+

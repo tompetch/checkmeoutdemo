@@ -106,7 +106,6 @@ resource "aws_cloudfront_distribution" "website_distribution" {
       }
     }
   }
-  
   aliases = ["${var.domain_name}"]
 
   restrictions {

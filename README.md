@@ -61,12 +61,15 @@ Sadly we ran out of time to make further improvements to the POC. We do have a n
 ![This is an image](/v1/docs/infra_v2.PNG)
 
 * Data input
+
 As the website advances there will be a requirement for customers to enter data via forms. In this instance we want to use a combination of api gateway, lambda and dynamodb to process any customer requests.
 
 * CMS
+
 There will be a requirement to modify the site so a simple cms system along with strong RBAC controls will be important.
 
 * Monitoring and logging
+
 Aside from the usual networking related health checks available, we would like to visualise the CloudFront access logs.
 
 
